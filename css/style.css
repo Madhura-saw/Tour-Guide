@@ -277,7 +277,7 @@ header .search-bar-container label:hover{
 
 .video-overlay{
   position: absolute;
-  background: rgba(65, 108, 70, 0.4);
+  
   z-index: 5;
   top: 0;
   left: 0;
@@ -318,11 +318,29 @@ header .search-bar-container label:hover{
   align-items: center;
 }
 
-.book .row .image{
+.search-section .row .image{
   flex:1 1 40rem;
 }
 
-.book .row .image img{
+.search-section .row .image img{
+  width:100%;
+}
+.search-section{
+  margin-top: 4%;
+}
+
+.search-section .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.search-section .row .image{
+  flex:1 1 40rem;
+}
+
+.search-section .row .image img{
   width:100%;
 }
 

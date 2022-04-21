@@ -47,6 +47,19 @@ section{
   background:none;
 }
 
+.search-section .heading span{
+  font-size: 3.5rem;
+  background:rgba(255, 255, 255, 0.838);
+  color:var(--orange);
+  border-radius: .5rem;
+  padding:.2rem 1rem;
+}
+
+
+.search-section .heading span.space{
+  background:#febf4a;
+}
+
 .btn{
   display: inline-block;
   margin-top: 3rem;
@@ -317,6 +330,13 @@ header .search-bar-container label:hover{
   gap:1.5rem;
   align-items: center;
 }
+.book .row .image{
+  flex:1 1 40rem;
+}
+
+.book .row .image img{
+  width:100%;
+}
 
 .search-section .row .image{
   flex:1 1 40rem;
@@ -336,13 +356,7 @@ header .search-bar-container label:hover{
   align-items: center;
 }
 
-.search-section .row .image{
-  flex:1 1 40rem;
-}
 
-.search-section .row .image img{
-  width:100%;
-}
 
 .plan_trip{
   font-size: 300%;

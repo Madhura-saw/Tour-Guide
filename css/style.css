@@ -55,7 +55,6 @@ section{
   padding:.2rem 1rem;
 }
 
-
 .search-section .heading span.space{
   background:#febf4a;
 }
@@ -352,7 +351,8 @@ header .search-bar-container label:hover{
 .search-section .row{
   display: flex;
   flex-wrap: wrap;
-  gap:1.5rem;
+  justify-content: space-between;
+  /* gap:1.5rem; */
   align-items: center;
 }
 
@@ -468,7 +468,7 @@ header .search-bar-container label:hover{
 .search-section{
   margin-top: 5%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   height: auto;

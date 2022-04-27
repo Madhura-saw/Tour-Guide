@@ -16,7 +16,8 @@ body {
   text-align: center;
   color: #ffa500;
   margin: 2%;
-  font-size: 275%;
+  font-size: 350%;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -30,7 +31,7 @@ body {
 
 .card {
   width: 50%;
-  height: 65vh;
+  height: 70vh;
   margin: 0 5%;
   padding: 2%;
   display: flex;
@@ -44,11 +45,11 @@ body {
 
 .card_2{
   width: 40%;
-  height: 65vh;
+  height: 70vh;
 
 }
 
-.button {
+.reviewbutton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,11 +58,13 @@ body {
   transition: all 0.2s;
 }
 
-.button a:hover {
+.reviewbutton a:hover {
   transform: scale(1.1, 1.1);
+  text-decoration: none;
+  color: white;
 }
 
-.btn {
+.reviewbtn {
   background-color: #ffa500;
   padding: 1%;
   font-size: 150%;
@@ -78,17 +81,21 @@ width: 90%;
 }
 
 #list h3 {
-  margin-top: 1.5%;
+  margin-top: 5%;
+  margin-bottom: 0.5%;
   color: #ffa500;
+  font-size: 140%;
+  font-weight: 600;
 }
 
 #list li {
   list-style: none;
   color: #ffa500;
   font-weight: 600;
+  font-size: 110%;
 }
 
 #list p{
-    font-size: 80%;
+    font-size: 90%;
 }
 

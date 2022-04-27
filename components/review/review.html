@@ -4,42 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tour-Guide Review</title>
+    <title>Tour Reviews</title>
     <link rel="stylesheet" href="review.css" />
   </head>
   <body>
+    <h1 class="main-heading">Tour Review</h1>
     <div class="container">
-      
-      <form action="" id="reviews">
-        <div class="section-heading">add your review</div>
-        <div class="alert">Your review sent!!</div>
-
-        <div class="inputBox">
-          <input type="text" id="name" placeholder="Your name" />
-        </div>
-
-        <div class="inputBox">
-          <input type="text" id="place" placeholder="Place name" />
-        </div>
-
-        <div class="inputBox">
-          <textarea
-            id="reviewContent"
-            cols="30"
-            rows="10"
-            placeholder="Write your Review"
-          ></textarea>
-        </div>
-
-        <div class="inputBox">
-          <div class="center-btn">
-            <button type="submit">Submit</button>
-          </div>
-        </div>
-      </form>
+      <div class="card">
+        <div class="limit"><div id="list"></div></div>
+      </div>
+      <!-- <div class="card_2">
+        <img class="img" src="Online Review-pana.png" alt="review image" />
+      </div> -->
     </div>
-    <div class="container"><div class="card"><div id="list"></div></div></div>
 
+    <div class="button">
+      <a href="add.html" class="btn">Add your review!</a>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
@@ -60,54 +41,16 @@
       // reference your database
       var reviewDB = firebase.database().ref("reviews");
 
-      document.getElementById("reviews").addEventListener("submit", submitForm);
-
-      function submitForm(e) {
-        e.preventDefault();
-
-        var name = getElementVal("name");
-        var place = getElementVal("place");
-        var reviewContent = getElementVal("reviewContent");
-        // console.log(name, place, reviewContent);
-
-        saveMessages(name, place, reviewContent);
-
-        //   enable alert
-        document.querySelector(".alert").style.display = "block";
-
-        //   remove the alert
-        setTimeout(() => {
-          document.querySelector(".alert").style.display = "none";
-        }, 3000);
-
-        //   reset the form
-        document.getElementById("reviews").reset();
-      }
-
-      const saveMessages = (name, place, reviewContent) => {
-        var newReview = reviewDB.push();
-
-        newReview.set({
-          name: name,
-          place: place,
-          reviewContent: reviewContent,
-        });
-      };
-
-      const getElementVal = (id) => {
-        return document.getElementById(id).value;
-      };
-
       var reId = 0;
 
       function addItemsToList(name, place, reviewContent) {
         var div = document.getElementById("list");
-        var _name = document.createElement("li");
-        var _place = document.createElement("p");
+        var _name = document.createElement("h3");
+        var _place = document.createElement("li");
         var _reviewContent = document.createElement("p");
 
         _name.innerHTML = name;
-        _place.innerHTML = place;
+        _place.innerHTML = "Tour to: " + place;
         _reviewContent.innerHTML = reviewContent;
 
         div.appendChild(_name);
@@ -130,15 +73,6 @@
       }
 
       window.onload = FetchAllData;
-
-      // firebase.database().ref("reviews").on("value",function(snapshot){
-      //   console.log(snapshot.val());
-      //   snapshot.forEach(function(element) {
-      //     document.querySelector('#list').innerHTML = `
-      //     <div>${element.val()}</div>
-      //     `
-      //   });
-      // })
     </script>
   </body>
 </html>

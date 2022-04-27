@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour-Guide Review</title>
+    <link rel="stylesheet" href="review.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+      <form action="" id="reviews">
+        <div class="section-heading">add your review</div>
+        <div class="alert">Your review sent!!</div>
+
+        <div class="inputBox">
+          <input type="text" id="name" placeholder="Your name" />
+        </div>
+
+        <div class="inputBox">
+          <input type="text" id="place" placeholder="Place name" />
+        </div>
+
+        <div class="inputBox">
+          <textarea
+            id="reviewContent"
+            cols="30"
+            rows="10"
+            placeholder="Write your Review"
+          ></textarea>
+        </div>
+
+        <div class="inputBox">
+          <div class="center-btn">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container"><div class="card"><div id="list"></div></div></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAm2ZrCfzM_QVNPBYYabi9rMb4virj6rCE",
+        authDomain: "tour-guide-reviews.firebaseapp.com",
+        databaseURL: "https://tour-guide-reviews-default-rtdb.firebaseio.com",
+        projectId: "tour-guide-reviews",
+        storageBucket: "tour-guide-reviews.appspot.com",
+        messagingSenderId: "703324054230",
+        appId: "1:703324054230:web:a14cb0a9cb39266a4a5f77",
+      };
+
+      // initialize firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // reference your database
+      var reviewDB = firebase.database().ref("reviews");
+
+      document.getElementById("reviews").addEventListener("submit", submitForm);
+
+      function submitForm(e) {
+        e.preventDefault();
+
+        var name = getElementVal("name");
+        var place = getElementVal("place");
+        var reviewContent = getElementVal("reviewContent");
+        // console.log(name, place, reviewContent);
+
+        saveMessages(name, place, reviewContent);
+
+        //   enable alert
+        document.querySelector(".alert").style.display = "block";
+
+        //   remove the alert
+        setTimeout(() => {
+          document.querySelector(".alert").style.display = "none";
+        }, 3000);
+
+        //   reset the form
+        document.getElementById("reviews").reset();
+      }
+
+      const saveMessages = (name, place, reviewContent) => {
+        var newReview = reviewDB.push();
+
+        newReview.set({
+          name: name,
+          place: place,
+          reviewContent: reviewContent,
+        });
+      };
+
+      const getElementVal = (id) => {
+        return document.getElementById(id).value;
+      };
+
+      var reId = 0;
+
+      function addItemsToList(name, place, reviewContent) {
+        var div = document.getElementById("list");
+        var _name = document.createElement("li");
+        var _place = document.createElement("p");
+        var _reviewContent = document.createElement("p");
+
+        _name.innerHTML = name;
+        _place.innerHTML = place;
+        _reviewContent.innerHTML = reviewContent;
+
+        div.appendChild(_name);
+        div.appendChild(_place);
+        div.appendChild(_reviewContent);
+      }
+
+      function FetchAllData() {
+        firebase
+          .database()
+          .ref("reviews")
+          .on("value", function (snapshot) {
+            snapshot.forEach(function (ChildSnapshot) {
+              let name = ChildSnapshot.val().name;
+              let place = ChildSnapshot.val().place;
+              let reviewContent = ChildSnapshot.val().reviewContent;
+              addItemsToList(name, place, reviewContent);
+            });
+          });
+      }
+
+      window.onload = FetchAllData;
+
+      // firebase.database().ref("reviews").on("value",function(snapshot){
+      //   console.log(snapshot.val());
+      //   snapshot.forEach(function(element) {
+      //     document.querySelector('#list').innerHTML = `
+      //     <div>${element.val()}</div>
+      //     `
+      //   });
+      // })
+    </script>
+  </body>
+</html>

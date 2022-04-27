@@ -58,9 +58,19 @@
 
       <form action="">
         <h3>login</h3>
-        <input type="email" class="box" placeholder="enter your email" />
-        <input type="password" class="box" placeholder="enter your password" />
-        <input type="submit" value="login now" class="btn" />
+        <input
+          type="email"
+          id="email"
+          class="box"
+          placeholder="enter your email"
+        />
+        <input
+          type="password"
+          id="password"
+          class="box"
+          placeholder="enter your password"
+        />
+        <input type="submit" value="login now" class="btn" onclick="signup()" />
         <input type="checkbox" id="remember" />
         <label for="remember">remember me</label>
         <p>forget password? <a href="#">click here</a></p>
@@ -164,7 +174,7 @@
             </label>
           </div>
         </div>
-        <div class="image">
+        <div class="image image_2">
           <img src="images/Travelers-pana.png" alt="" />
         </div>
       </div>
@@ -212,5 +222,47 @@
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAm2ZrCfzM_QVNPBYYabi9rMb4virj6rCE",
+        authDomain: "tour-guide-reviews.firebaseapp.com",
+        databaseURL: "https://tour-guide-reviews-default-rtdb.firebaseio.com",
+        projectId: "tour-guide-reviews",
+        storageBucket: "tour-guide-reviews.appspot.com",
+        messagingSenderId: "703324054230",
+        appId: "1:703324054230:web:a14cb0a9cb39266a4a5f77",
+      };
+
+      // initialize firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+
+      function signup() {
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+
+        const promise = auth.createUserWithEmailAndPassword(
+          email.value,
+          password.value
+        );
+        //
+        promise.catch((e) => alert(e.message));
+        alert("SignUp Successfully");
+      }
+
+      // firebase.auth().onAuthStateChanged((user) => {
+      //   if (user) {
+      //     var email = user.email;
+      //     alert("Active user " + email);
+      //   } else {
+      //     alert("No Active user Found");
+      //   }
+      // });
+
+    </script>
   </body>
 </html>

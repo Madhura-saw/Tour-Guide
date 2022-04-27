@@ -32,7 +32,7 @@ section{
 
 .heading{
   text-align: center;
-  padding:2.5rem 0
+  padding:2.5rem 1rem;
 }
 
 .heading span{
@@ -289,7 +289,6 @@ header .search-bar-container label:hover{
 
 .video-overlay{
   position: absolute;
-  
   z-index: 5;
   top: 0;
   left: 0;
@@ -485,7 +484,7 @@ header .search-bar-container label:hover{
 }
 
 .image_2{
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .box{

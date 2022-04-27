@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-heading {
+  color: white;
+  font-size: 250%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 45%;
+  height: 90vh;
+  margin: 2.5%;
+  background-color: #ffa500;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container form {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputBox {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="email"] {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0px 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.inputBox textarea {
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.center-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox button {
+  width: 50%;
+  height: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background: white;
+  color: #ffa500;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.inputBox button:hover {
+  transform: translate(2%,2%);
+  transition: all 0.3s ease;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: #ffa500;
+}
+
+.alert {
+  width: 100%;
+  background: rgb(0, 255, 106);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+}
+
+#list{
+  color: white;
+  font-size: 150%;
+}
+
+#list li{
+  list-style-type: "\272F  ";
+  color: black;
+  font-weight: 600;
+}
+

@@ -1,5 +1,6 @@
 
 ![Tour_Guide](https://user-images.githubusercontent.com/84861665/165694124-573b199c-9dc5-4aaa-b97b-dca4a038ebb7.png)
+<img src="https://github-readme-stats.vercel.app/api?username={username}&theme=blue-green" />
 ## **Team Number : 05**
 ---
 ### :technologist: **Team Members**
@@ -24,8 +25,8 @@ Our project Tour Guide is an interactive web interface where a user can explore 
 
 ### :computer: **Technology Stack**
 
-- Front-End development using EJS,html,css
-- Back-End development using Firebase,Node.js using MongoDB database
+- Front-End development using EJS,HTML,CSS,Javascript
+- Back-End development using Firebase for Authentication and reviews, NodeJS, MongoDB database
 - Mapbox Map and Directions API
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />

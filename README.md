@@ -31,6 +31,7 @@ We have created a website for Maharashtra Tour Guide where we offer a very inter
 - We are focusing on to provide more information about the tourist place and include more tourist attraction places in it.
 - We will try to provide details about the reviews and ratings of the tourist place.
 
+## **Following are the screenshots of our Project Website**
 
 ![home_s](https://user-images.githubusercontent.com/90787486/165693429-5fd47043-a0e4-45d0-8a1f-3f65996ba0c9.png)
 ![home_e](https://user-images.githubusercontent.com/90787486/165693437-6112d4e0-88c4-4de5-aeeb-59f7e3309ea5.png)

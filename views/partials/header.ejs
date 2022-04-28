@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Guide</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      
+    />
+
+    <!-- Importing map file -->
+    <!-- <link href="components/map-page/index.html" rel="import" /> -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/place.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/review.css" />
+    <link rel="stylesheet" href="/css/add.css" />
+    <link rel="icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="/" class="logo"><span>T</span>ravel<span>+</span></a>
+
+      <nav class="navbar">
+        <a href="/">HOME</a>
+        <a href="/index">PLAN</a>
+        <a href="/places">PLACES</a>
+        <a href="/review">REVIEW</a>
+        <a href="/contact">CONTACT US</a>
+        
+      </nav>
+
+      <div class="icons">
+        
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="/">
+        <h3>Login</h3>
+        <input type="email" class="box" name="username" placeholder="Enter Your Email" />
+        <input type="password" class="box" name="password" placeholder="Enter Your Password" />
+        <input type="submit" value="Login Now" class="btn" />
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+       let formBtn = document.querySelector('#login-btn');
+    let loginForm = document.querySelector('.login-form-container');
+    let formClose = document.querySelector('#form-close');
+  formBtn.addEventListener('click', () =>{
+      loginForm.classList.add('active');
+  });
+  
+  formClose.addEventListener('click', () =>{
+      loginForm.classList.remove('active');
+      const firebaseConfig = {
+        apiKey: "AIzaSyAm2ZrCfzM_QVNPBYYabi9rMb4virj6rCE",
+        authDomain: "tour-guide-reviews.firebaseapp.com",
+        databaseURL: "https://tour-guide-reviews-default-rtdb.firebaseio.com",
+        projectId: "tour-guide-reviews",
+        storageBucket: "tour-guide-reviews.appspot.com",
+        messagingSenderId: "703324054230",
+        appId: "1:703324054230:web:a14cb0a9cb39266a4a5f77",
+      };
+
+      // initialize firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+
+      function signup() {
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+
+        const promise = auth.createUserWithEmailAndPassword(
+          email.value,
+          password.value
+        );
+        //
+        promise.catch((e) => alert(e.message));
+        alert("SignUp Successfully");
+      }
+    
+  });
+</script>

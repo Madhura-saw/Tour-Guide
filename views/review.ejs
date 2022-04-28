@@ -1,0 +1,76 @@
+
+<%- include("partials/header"); -%>
+<body>
+    <section class="review">
+    <h1 class="main-heading">Tour Review</h1>
+    <div class="container">
+      <div class="card col-xs-6">
+        <div class="limit"><div id="list"></div></div>
+      </div>
+      <div class="card_2 col-xs-6">
+        <img class="img_r" src="/images/Online Review-pana.png" alt="review image" />
+      </div>
+    </div>
+
+    <div class="reviewbutton">
+      <a href="/add" class="reviewbtn">Add Your Review</a>
+    </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+      const integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u";
+      const crossorigin="anonymous";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAm2ZrCfzM_QVNPBYYabi9rMb4virj6rCE",
+        authDomain: "tour-guide-reviews.firebaseapp.com",
+        databaseURL: "https://tour-guide-reviews-default-rtdb.firebaseio.com",
+        projectId: "tour-guide-reviews",
+        storageBucket: "tour-guide-reviews.appspot.com",
+        messagingSenderId: "703324054230",
+        appId: "1:703324054230:web:a14cb0a9cb39266a4a5f77",
+      };
+
+      // initialize firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // reference your database
+      var reviewDB = firebase.database().ref("reviews");
+
+      var reId = 0;
+
+      function addItemsToList(name, place, reviewContent) {
+        var div = document.getElementById("list");
+        var _name = document.createElement("h3");
+        var _place = document.createElement("li");
+        var _reviewContent = document.createElement("p");
+
+        _name.innerHTML = name;
+        _place.innerHTML = "Tour to: " + place;
+        _reviewContent.innerHTML = reviewContent;
+
+        div.appendChild(_name);
+        div.appendChild(_place);
+        div.appendChild(_reviewContent);
+      }
+
+      function FetchAllData() {
+        firebase
+          .database()
+          .ref("reviews")
+          .on("value", function (snapshot) {
+            snapshot.forEach(function (ChildSnapshot) {
+              let name = ChildSnapshot.val().name;
+              let place = ChildSnapshot.val().place;
+              let reviewContent = ChildSnapshot.val().reviewContent;
+              addItemsToList(name, place, reviewContent);
+            });
+          });
+      }
+
+      window.onload = FetchAllData;
+    </script>
+  </body>
+
+  <%- include("partials/footer"); -%>

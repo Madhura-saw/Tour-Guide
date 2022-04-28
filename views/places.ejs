@@ -1,0 +1,112 @@
+<%- include("partials/header"); -%>
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Beaches</h3>
+        
+    </div>
+    <div class="img-container">
+        <img src="/images/beach.jpg"></img>
+    </div>
+</section>
+
+<section class="packages">
+    <div class="box-container">
+        <%  places.forEach(function(place){ %>
+        <%  if(place.type==="beach") {%>  
+        <div class="box">
+            <img src="<%=place.image%>" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> <%=place.name%> </h3>
+                
+                <a href="/info/<%=place.name%>" class="btn">Learn More</a>
+            </div>
+        </div>
+        <% }}) %>
+    </div>
+</section> 
+    
+        
+<span></span>
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Spiritual Places</h3>
+        
+    </div>
+    <div class="img-container">
+        <img src="/images/spiritual.jpg"></img>
+    </div>   
+</section>
+
+<section class="packages">
+    <div class="box-container">
+        <% places.forEach(function(place){ %>
+            <%  if(place.type==="temple") {%> 
+        <div class="box">
+            <img src="<%=place.image%>" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> <%=place.name%> </h3>
+                
+                <a href="/info/<%=place.name%>" class="btn">Learn More</a>
+            </div>
+        </div>
+        <%} }) %>
+    </div>
+</section> 
+    
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>Hill Stations</h3> 
+    </div>
+    <div class="img-container">
+        <img src="/images/hill.jpg"></img>
+    </div>  
+</section>
+<section class="packages">
+    <div class="box-container">
+        <%  places.forEach(function(place){ %>
+            <%  if(place.type==="hillstation") {%> 
+        <div class="box">
+            <img src="<%=place.image%>" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> <%=place.name%> </h3>
+                
+                <a href="/info/<%=place.name%>" class="btn">Learn More</a>
+            </div>
+        </div>
+        <% } %>
+        <% }) %>
+    </div>
+</section> 
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Historical Places</h3>
+        
+    </div>
+    <div class="img-container">
+        <img src="/images/forts.jpg"></img>
+    </div>
+</section>
+
+<section class="packages">
+    <div class="box-container">
+        <%  places.forEach(function(place){ %>
+            <%  if(place.type==="caves"){%>
+        <div class="box">
+            <img src="<%=place.image%>" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> <%=place.name%> </h3>
+                
+                <a href="/info/<%=place.name%>" class="btn">Learn More</a>
+            </div>
+        </div>
+        <% } %>
+        <% }) %>
+    </div>
+</section> 
+</section>
+<%- include("partials/footer"); -%>

@@ -1,0 +1,97 @@
+<%- include("partials/header"); -%>
+
+   <!-- home section starts  -->
+
+   <section class="home" id="home">
+    <div class="content">
+      <h3>ADVENTURE IS WORTHWHILE</h3>
+      <p>Dicover New Places With Us, Adventure Awaits</p>
+      <a href="/places" class="btn">Discover More</a>
+    </div>
+<div class="video-container">
+      <video
+        src="/images/vid-2.mp4"
+        id="video-slider"
+        loop
+        autoplay
+        muted
+      ></video>
+    </div>
+  </section>
+
+  <!-- home section ends -->
+
+  <!-- book section starts  -->
+
+  <section class="book" id="book">
+    <h1 class="heading">
+      <span>P</span>
+      <span>L</span>
+      <span>A</span>
+      <span>N</span>
+      <span class="space"></span>
+      <span>N</span>
+      <span>O</span>
+      <span>W</span>
+    </h1>
+
+    <div class="row">
+      <div class="image image_1">
+        <img src="/images/Traveling-cuate.png" alt="" />
+      </div>
+
+      <div class="plan_trip">
+        <h1>Plan Your Trip</h1>
+        <ul>
+          <li>🔸 Choose your source and destination</li>
+          <li>🔸 Know the distance and time to reach</li>
+          <li>🔸 Select your mode of transport</li>
+          <li>🔸 Get the directions</li>
+          <li>🔸 And you are ready to start!!</li>
+        </ul>
+        <a href="/index"
+          ><button class="btn">PLAN NOW</button></a
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- Search bar -->
+  <section class="search-section">
+    <div class="search-title">
+      <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>A</span>
+        <span>R</span>
+        <span>C</span>
+        <span>H</span>
+        <span class="space"></span>
+        <span>P</span>
+        <span>L</span>
+        <span>A</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+    </div>
+    <div class="row">
+      <div class="box col-md-6">
+        <div class="search-heading">Search your tour</div>
+        <input type="checkbox" id="check" />
+        <div class="search-box">
+          <form class="" action="/home" method="post">
+          <input  class="form-control" type="text" name="searchplace" placeholder="Type here..." />
+          <label for="check" class="icon">
+            <i class="fas fa-search"><button type="submit" name="button"></button></i>
+          </label>
+        </form>
+        </div>
+      </div>
+      <div class="image">
+        <img src="/images/Travelers-pana.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+
+.review {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 50px 50px 50px 50px;
+}
+
+.review .main-heading {
+  text-align: center;
+  color: #ffa500;
+  margin: 2%;
+  font-size: 350%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.review .img_r{
+  width: 100%;
+}
+
+.review .container{
+  width: 100%;
+}
+
+.review .card {
+  width: 60%;
+  height: 70vh;
+  margin: 0 5% ;
+  margin-left: 2px;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 1.15rem;
+}
+
+.review .card_2{
+  width: 50%;
+  height: 70vh;
+  margin-right: 10px;
+
+}
+
+.review .reviewbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4% 0;
+  transform: scale(0.9, 0.9);
+  transition: all 0.2s;
+}
+
+.review .reviewbutton a:hover {
+  transform: scale(1.1, 1.1);
+  text-decoration: none;
+  color: white;
+}
+
+.review .reviewbtn {
+  background-color: #ffa500;
+  padding: 1%;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.limit{
+width: 90%;
+}
+
+#list {
+  font-size: 150%;
+}
+
+#list h3 {
+  margin-top: 5%;
+  margin-bottom: 0.5%;
+  color: #ffa500;
+  font-size: 140%;
+  font-weight: 600;
+}
+
+#list li {
+  list-style: none;
+  color: #ffa500;
+  font-weight: 600;
+  font-size: 110%;
+}
+
+#list p{
+    font-size: 90%;
+}
+

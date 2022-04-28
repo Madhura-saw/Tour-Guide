@@ -1,0 +1,96 @@
+
+<%- include("partials/header"); -%>
+<section class="home" id="home">
+
+    <div class="content">
+        <h3><%=name%></h3>
+        
+    </div>
+    <div class="img-container">
+        <img src="<%=image%>"></img>
+    </div>
+</section>
+<section class="info">
+    <%  if(desc){ %>
+    <div class="desc">
+        <p><%=desc%></p>
+    </div>
+    <% } %>
+    <%  if(region){ %>
+    <div class="desc">
+        <h2>Region : </h2>
+        <p><%=region%>
+        </p>   
+    </div>
+    <% } %>
+    <%  if(history){ %>
+        <div class="desc">
+            <h2>History :</h2>
+            <p><%=history%></p>
+        </div>
+     <% } %>
+    
+    <%  if(geography){ %>
+    <div class="desc">
+        <h2>Geography :</h2>
+        <p><%=geography%></p>
+    </div>
+    <% } %>
+    <%  if(climate){ %>
+        <div class="desc">
+            <h2>Weather :</h2>
+            <p><%=climate%></p>
+        </div>
+    <% } %>
+    <%  if(things){ %>
+    <div class="desc">
+        <h2>Things to do :</h2>
+        <p><%=things%></p>
+    </div>
+    <% } %>
+    
+    <%  if(places){ %>
+    <div class="desc">
+        <h2>Nearest tourist place :
+        </h2>
+        <p><%=places%></p>
+    <% } %>
+    </div>
+    <%  if(travel){ %>
+    <div class="desc">
+        <h2>How to travel to tourist place by Rail, Air, Road (train, flight, bus) with distance and required time :
+        </h2>
+        <p><%=travel%></p>
+    </div>
+    <% } %>
+    <%  if(speciality){ %>
+    <div class="desc">
+        <h2>Special food speciality and hotel :
+        </h2>
+        <p><%=speciality%></p>
+    </div>
+    <% } %>
+    <%  if(accomodation){ %>
+    <div class="desc">
+        <h2>Accommodation facilities nearby & Hotel/ Hospital/Post Office/Police station :</h2>
+        <p><%=accomodation%></p>
+    </div>
+    <% } %>
+   
+    <%  if(languages){ %>
+    <div class="desc">
+        <h2>Language spoken in area :
+        </h2>
+        <p><%=languages%>
+        </p>
+    </div>
+    <% } %>
+    <%  if(visit){ %>
+    <div class="desc">
+        <h2>Visiting Rule and Time, Best month to visit :
+        </h2>
+        <p><%=visit%></p></div>
+    <% } %>
+
+</section>
+<%- include("partials/footer"); -%>

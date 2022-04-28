@@ -36,8 +36,8 @@ Our project Tour Guide is an interactive web interface where a user can explore 
 - We are focusing on to provide more information about the tourist place and include more tourist attraction places in it.
 - We will try to provide details about the reviews and ratings of the tourist place.
 
-### :link: **GITHUB REPO** - [Tour Guide]( https://github.com/Madhura-saw/Tour-Guide)
-### :link: **DRIVE LINK** - [Tour Guide Drive](https://drive.google.com/drive/u/0/folders/1RVvO1I57hpM3rurwNt9y_gfzVy2bbC47)
+### :link: **Github Repo** - [Tour Guide]( https://github.com/Madhura-saw/Tour-Guide)
+### :link: **Drive Link** - [Tour Guide Drive](https://drive.google.com/drive/u/0/folders/1RVvO1I57hpM3rurwNt9y_gfzVy2bbC47)
 
 ## :iphone: **Following are the screenshots of our Project Website**
 

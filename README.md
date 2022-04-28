@@ -27,6 +27,8 @@ Our project Tour Guide is an interactive web interface where a user can explore 
 
 ### **Technology Stack**
 
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> 
+
 - Front-end: EJS
 - Back-end: Node.js using MongoDB database
 

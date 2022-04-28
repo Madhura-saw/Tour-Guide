@@ -12,8 +12,15 @@
 ---
 ### **Project Description**
 
-We have created a website for Maharashtra Tour Guide where we offer a very interactive interface where a user can explore the Maharashtra's hidden gems and mangnificent Tourist spots which are budget friendly and can help user to plan the next trip.
+Our project Tour Guide is an interactive web interface where a user can explore the hidden gems's of Maharashtra and mangificient Tourist spots.This website helps them plan their trips, a handy guide which offers all the information about the places within some clicks and review the places they have visited which will help guide the other people for planning their amazing trips to amazing destinations.
 
+### **Website Features**
+
+1. Log in and create your account
+2. Browse and explore tourists spots in Maharashtra
+3. Plan your trips using maps, select the source and destination, choose your mode of transport and you will get the distance and directions to your destination.
+4. Search for the places whose guide you want to explore.
+5. Add reviews to the places you have already visited.
 
 ### **GITHUB REPO** - [Tour Guide]( https://github.com/Madhura-saw/Tour-Guide)
 ### **DRIVE LINK** - [Tour Guide Drive](https://drive.google.com/drive/u/0/folders/1RVvO1I57hpM3rurwNt9y_gfzVy2bbC47)

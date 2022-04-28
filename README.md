@@ -22,16 +22,10 @@ Our project Tour Guide is an interactive web interface where a user can explore 
 4. Search for the places whose guide you want to explore.
 5. Add reviews to the places you have already visited.
 
-### **GITHUB REPO** - [Tour Guide]( https://github.com/Madhura-saw/Tour-Guide)
-### **DRIVE LINK** - [Tour Guide Drive](https://drive.google.com/drive/u/0/folders/1RVvO1I57hpM3rurwNt9y_gfzVy2bbC47)
-
 ### **Technology Stack**
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
  <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
-
-- Front-end: EJS
-- Back-end: Node.js using MongoDB database
 
 ### **Usage**
 - Firstly the home page will open up where you will get a list of tourist attractions.
@@ -41,6 +35,9 @@ Our project Tour Guide is an interactive web interface where a user can explore 
 
 - We are focusing on to provide more information about the tourist place and include more tourist attraction places in it.
 - We will try to provide details about the reviews and ratings of the tourist place.
+
+### **GITHUB REPO** - [Tour Guide]( https://github.com/Madhura-saw/Tour-Guide)
+### **DRIVE LINK** - [Tour Guide Drive](https://drive.google.com/drive/u/0/folders/1RVvO1I57hpM3rurwNt9y_gfzVy2bbC47)
 
 ## **Following are the screenshots of our Project Website**
 

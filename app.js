@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-const url = 'mongodb://127.0.0.1/touristPlaces';
+const url = 'mongodb+srv://MansiShingate:Travel%40321@cluster0.2bhoy.mongodb.net/touristPlaces';
 mongoose.connect(url, {useNewUrlParser: true});
 
 const placeSchema = new mongoose.Schema({

@@ -15,7 +15,7 @@ We have created a website for Maharashtra Tour Guide where we offer a very inter
 
 
 ### **GITHUB REPO** - [Tour Guide]( https://github.com/Madhura-saw/Tour-Guide)
-### **DRIVE LINK** - [Images](https://drive.google.com/drive/u/0/folders/1RVvO1I57hpM3rurwNt9y_gfzVy2bbC47)
+### **DRIVE LINK** - [Tour Guide Drive](https://drive.google.com/drive/u/0/folders/1RVvO1I57hpM3rurwNt9y_gfzVy2bbC47)
 
 ### **Technology Stack**
 

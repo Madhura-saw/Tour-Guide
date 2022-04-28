@@ -48,7 +48,7 @@ Our project Tour Guide is an interactive web interface where a user can explore 
 ### :link: **Github Repo** - [Tour Guide]( https://github.com/Madhura-saw/Tour-Guide)
 ### :link: **Drive Link** - [Tour Guide Drive](https://drive.google.com/drive/u/0/folders/1RVvO1I57hpM3rurwNt9y_gfzVy2bbC47)
 
-### :iphone: **Some screenshots of our Project Website**
+### :camera: **Some screenshots of our Project Website**
 
 ![home_s](https://user-images.githubusercontent.com/90787486/165693429-5fd47043-a0e4-45d0-8a1f-3f65996ba0c9.png)
 ![home_e](https://user-images.githubusercontent.com/90787486/165693437-6112d4e0-88c4-4de5-aeeb-59f7e3309ea5.png)

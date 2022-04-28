@@ -1,6 +1,5 @@
 
 ![Tour_Guide](https://user-images.githubusercontent.com/84861665/165694124-573b199c-9dc5-4aaa-b97b-dca4a038ebb7.png)
-
 ## **Team Number : 05**
 ---
 ### :technologist: **Team Members**
@@ -33,8 +32,13 @@ Our project Tour Guide is an interactive web interface where a user can explore 
  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" /> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" />
 
 ###  :wrench: **Usage**
-- Firstly the home page will open up where you will get a list of tourist attractions.
-- Click on any of the category which you want to explore and you will be directed to the tourist place of     your choice.
+- Firstly the home page will open up where you will get to see different sections.
+- Clicking on 'Discover More' in header will lead you to explore different tourists spots in Maharashtra. You can also explore this section by clicking on places in the Navigation bar.
+- Click on any of the category which you want to explore and you will be directed to the tourist place of your choice.
+- In the Plan Now section you can follow the instructions given in the home page and accordingly work with the maps and navigation of that section.
+- You can also search for the places you want in the search bar at the bottom.
+- In the review section you can read the reviews of other people and also add your review by clicking at the button at the bottopm of the page
+- From the contact us section feel free to drop any message for us :)
 
 ### :crystal_ball: **Future Scope**
 

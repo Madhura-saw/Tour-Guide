@@ -14,7 +14,7 @@
 
 Our project Tour Guide is an interactive web interface where a user can explore the hidden gems's of Maharashtra and mangificient Tourist spots.This website helps them plan their trips, a handy guide which offers all the information about the places within some clicks and review the places they have visited which will help guide the other people for planning their amazing trips to amazing destinations.
 
-### **Website Features**
+### **Features**
 
 1. Log in and create your account
 2. Browse and explore tourists spots in Maharashtra
